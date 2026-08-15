@@ -1,0 +1,5 @@
+# dsh-ocgo-lite bundle layer
+- insert:
+    - id: ocgo-lite
+      name: dsh-ocgo-lite
+      inject: ['webServer']
