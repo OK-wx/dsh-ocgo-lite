@@ -42,7 +42,10 @@
 ### 方式 A：官方 bundle（推荐，随 DSH 启动自动加载）
 
 ```sh
-# 从父目录安装进 profile 并启动
+# GitHub 直接安装(推荐)
+dsh plugin --profile web add github:OK-wx/dsh-ocgo-lite
+
+# 或从源码目录安装
 dsh plugin --profile web add <本目录>
 dsh --profile web
 ```

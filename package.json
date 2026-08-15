@@ -22,6 +22,14 @@
     "client": {
       "inject": [],
       "platform": "web"
+    },
+    "marketplace": {
+      "profiles": [
+        "web"
+      ],
+      "requiresBuildApproval": false,
+      "requiresRestart": true,
+      "manualSteps": false
     }
   },
   "peerDependencies": {
