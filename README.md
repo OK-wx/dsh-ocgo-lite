@@ -8,32 +8,55 @@
   <img src="screenshots/overview.png" alt="常驻条总览" width="700">
 </p>
 
-```
-[GO:]  滚动：◯5%  周：◯7%  月：◯3%  范围：本次会话  模型：deepseek-v4-flash  token：58,234  花费：$0.04
-```
-
-## 📸 截图
-
-### 点击各区块弹出的详情卡片
-
-| GO 账户 | 套餐配额 | 统计范围 |
-|---|---|---|
-| <img src="screenshots/go-account.png" alt="GO 账户卡片" width="280"> | <img src="screenshots/quota.png" alt="配额详情" width="280"> | <img src="screenshots/scope.png" alt="范围选择" width="280"> |
-
-| 模型选择 | token 明细 | 花费排行 |
-|---|---|---|
-| <img src="screenshots/model.png" alt="模型选择" width="280"> | <img src="screenshots/token.png" alt="token 详情" width="280"> | <img src="screenshots/money.png" alt="花费详情" width="280"> |
-
 ## ✨ 功能
 
-| 区块 | 交互 |
-|---|---|
-| **GO:** | 点击弹出账户卡片（登录状态、套餐、配额概览、API Key 掩码 + 一键复制） |
-| **滚动 / 周 / 月（圆环）** | 官方配额百分比圆环（健康色：蓝/黄/红），点击弹出三窗口进度条 + 重置倒计时 |
-| **范围：** | 点击切换统计范围——**全部**（所有 DSH 会话合计）/ **本次会话**（仅当前聊天）；切到本次会话时若只有 1 个模型自动选中该模型 |
-| **模型：** | 点击弹出模型选择器——范围=本次会话时只列出本次会话用过的模型；选中后状态条 token/花费联动（范围+模型双层联动） |
-| **token** | 完整数字 + 详情卡片（输入/输出/推理/缓存读/写 + 按模型分组明细，标题随范围显示「总消耗 token / 本次会话总消耗」） |
-| **花费** | 详情卡片：累计金额 + 按模型花费排行（占比条 + 各模型官方定价，随范围联动） |
+### GO：账户卡片
+
+点击弹出账户卡片：登录状态、套餐、配额概览、API Key 掩码 + **一键复制**（复制成功有 toast 提示）。
+
+<p align="center">
+  <img src="screenshots/go-account.png" alt="GO 账户卡片" width="360">
+</p>
+
+### 滚动 / 周 / 月：套餐配额
+
+官方配额百分比圆环（健康色：蓝/黄/红），点击弹出三窗口进度条 + 重置倒计时。
+
+<p align="center">
+  <img src="screenshots/quota.png" alt="配额详情" width="360">
+</p>
+
+### 范围：全部 / 本次会话
+
+点击切换统计范围——**全部**（所有 DSH 会话合计）/ **本次会话**（仅当前聊天）；切到本次会话时若只有 1 个模型自动选中该模型。每个会话的「范围 + 模型」选择会被**记忆**，切走再切回原样恢复。
+
+<p align="center">
+  <img src="screenshots/scope.png" alt="范围选择" width="360">
+</p>
+
+### 模型：按模型联动
+
+点击弹出模型选择器——范围=本次会话时只列出本次会话用过的模型；选中后状态条 token/花费联动显示该模型（范围+模型双层联动）。
+
+<p align="center">
+  <img src="screenshots/model.png" alt="模型选择" width="360">
+</p>
+
+### token：消耗明细
+
+完整数字 + 详情卡片（输入/输出/推理/缓存读/写 + 按模型分组明细，标题随范围显示「总消耗 token / 本次会话总消耗」）；选中模型时只显示该模型口径。
+
+<p align="center">
+  <img src="screenshots/token.png" alt="token 详情" width="360">
+</p>
+
+### 花费：金额排行
+
+详情卡片：累计金额 + 按模型花费排行（占比条 + 各模型官方定价，随范围/模型联动）。
+
+<p align="center">
+  <img src="screenshots/money.png" alt="花费详情" width="360">
+</p>
 
 - 点击页面空白处关闭详情卡片
 - 30 秒自动刷新（无感，不闪 loading）
