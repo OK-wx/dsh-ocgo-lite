@@ -4,17 +4,15 @@
 
 聊天输入框下方（composer dock）**常驻展开**显示 OpenCode Go 套餐余量、token 消耗与花费，零外部依赖。
 
+<p align="center">
+  <img src="screenshots/overview.png" alt="常驻条总览" width="700">
+</p>
+
 ```
 [GO:]  滚动：◯5%  周：◯7%  月：◯3%  范围：本次会话  模型：deepseek-v4-flash  token：58,234  花费：$0.04
 ```
 
 ## 📸 截图
-
-### 常驻条（composer dock）
-
-<p align="center">
-  <img src="screenshots/overview.png" alt="常驻条总览" width="700">
-</p>
 
 ### 点击各区块弹出的详情卡片
 
