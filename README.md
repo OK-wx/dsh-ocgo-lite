@@ -10,13 +10,21 @@
 
 ## 📸 截图
 
-| 总览（常驻条） | GO 账户卡片 | 配额详情 |
-|---|---|---|
-| ![总览](screenshots/overview.png) | ![GO 账户](screenshots/go-account.png) | ![配额](screenshots/quota.png) |
+### 常驻条（composer dock）
 
-| 范围选择 | 模型选择 | token 详情 | 花费详情 |
-|---|---|---|---|
-| ![范围](screenshots/scope.png) | ![模型](screenshots/model.png) | ![token](screenshots/token.png) | ![花费](screenshots/money.png) |
+<p align="center">
+  <img src="screenshots/overview.png" alt="常驻条总览" width="700">
+</p>
+
+### 点击各区块弹出的详情卡片
+
+| GO 账户 | 套餐配额 | 统计范围 |
+|---|---|---|
+| <img src="screenshots/go-account.png" alt="GO 账户卡片" width="280"> | <img src="screenshots/quota.png" alt="配额详情" width="280"> | <img src="screenshots/scope.png" alt="范围选择" width="280"> |
+
+| 模型选择 | token 明细 | 花费排行 |
+|---|---|---|
+| <img src="screenshots/model.png" alt="模型选择" width="280"> | <img src="screenshots/token.png" alt="token 详情" width="280"> | <img src="screenshots/money.png" alt="花费详情" width="280"> |
 
 ## ✨ 功能
 
