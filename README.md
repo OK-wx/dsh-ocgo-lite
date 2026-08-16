@@ -74,10 +74,16 @@ dsh --profile web
 dev_install_package {"dir": "<本目录>", "profile": "web"}
 ```
 
+### 方式 C：插件市场
+
+- [dsh.aitreez.com](https://dsh.aitreez.com)（DSH-Plugin Store，GitHub topic 自动收录）
+- YELEBAI 插件市场 / dsh-market（收录后可在设置 → 插件市场一键安装）
+
 ## 🔌 Host API
 
 - `GET /ocgo-lite/api` — 聚合 JSON（配额 + DSH token/花费 + 按模型/按会话 + 账户掩码）
-- `GET /ocgo-lite/api?live=<sessionId>` — 实时通道：只重读指定会话（秒级），替换缓存条目后重聚合全局
+- `GET /ocgo-lite/api?live=<sessionId>` — 实时通道：增量直读 mtime 变化的会话日志文件
+  （未变化的会话用缓存条目），替换后重聚合全局 → 本次会话/全部范围均实时
 - `GET /ocgo-lite/key` — 完整 API Key（仅本机同源，供复制）
 - 模型工具 `opencode_go_usage` — 对话里直接查询
 
@@ -86,11 +92,11 @@ dev_install_package {"dir": "<本目录>", "profile": "web"}
 纯手写 ESM bundle 插件，无构建步骤（无需 tsc/tsdown）：
 
 ```
-lib/index.js   Host：配额抓取 + DSH 会话统计 + 定价动态更新 + HTTP 路由 + 模型工具
-lib/client.js  Client：composer.dock 常驻条 + 详情卡片（Portal 渲染）+ 模型选择
+lib/index.js   Host：配额抓取 + DSH 会话统计(增量实时/内存保护) + 定价动态更新 + HTTP 路由 + 模型工具
+lib/client.js  Client：composer.dock 常驻条 + 详情卡片（Portal 渲染）+ 范围/模型切换 + 会话配置记忆
 ```
 
-改完 `lib/` 后：`dev_reload_package {"packageName": "dsh-ocgo-lite"}` 热重载。
+改完 `lib/` 后：`dev_reload_package {"packageName": "dsh-ocgo-lite"}` 热重载（或重启 `dsh web`）。
 
 ## 📋 环境要求
 
