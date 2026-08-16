@@ -8,6 +8,16 @@
 [GO:]  滚动：◯5%  周：◯7%  月：◯3%  范围：本次会话  模型：deepseek-v4-flash  token：58,234  花费：$0.04
 ```
 
+## 📸 截图
+
+| 总览（常驻条） | GO 账户卡片 | 配额详情 |
+|---|---|---|
+| ![总览](screenshots/overview.png) | ![GO 账户](screenshots/go-account.png) | ![配额](screenshots/quota.png) |
+
+| 范围选择 | 模型选择 | token 详情 | 花费详情 |
+|---|---|---|---|
+| ![范围](screenshots/scope.png) | ![模型](screenshots/model.png) | ![token](screenshots/token.png) | ![花费](screenshots/money.png) |
+
 ## ✨ 功能
 
 | 区块 | 交互 |
