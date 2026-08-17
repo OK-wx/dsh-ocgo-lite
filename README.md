@@ -70,8 +70,8 @@
 | 数据 | 来源 | 口径 |
 |---|---|---|
 | **配额余量** | 官方 `https://opencode.ai/zen/go/v1/usage`（Bearer auth.json key） | **账户级**（含其他设备/软件），不受范围切换影响 |
-| **token / 花费** | DSH 会话事件（`assistant/message` 的 usage，过滤 opencode-go provider） | **仅 DSH 会话**（不含 opencode CLI 等），范围=全部/本次会话 |
-| **金额** | 按官方定价表估算（per 1M tokens） | 输入 $0.14 / 输出 $0.28 / 缓存读 $0.0028（deepseek-v4-flash） |
+| **token / 花费** | DSH 会话事件（`assistant/message` 的 usage，按 provider 分组统计） | **DSH 会话全部 provider**（opencode-go / deepseek-official / 其他套餐，自动识别切换），范围=全部/本次会话/最近对话 |
+| **金额** | 按官方定价表估算（per 1M tokens） | 输入 $0.14 / 输出 $0.28 / 缓存读 $0.0028（deepseek-v4-flash）；**无官方定价的模型金额不计入，显示「定价未知」** |
 
 ### 实时性
 
